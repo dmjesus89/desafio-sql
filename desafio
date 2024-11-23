@@ -1,0 +1,90 @@
+Desafio SQL - E-commerce 🛍️
+Cenário
+Você foi contratado para desenvolver o banco de dados de uma loja virtual. A loja precisa armazenar informações sobre clientes, produtos, pedidos e seus itens.
+Requisitos do Banco de Dados
+Clientes
+
+Cada cliente deve ter um identificador único
+Armazenar nome completo, email e estado (UF)
+Registrar a data em que o cliente se cadastrou
+Um cliente pode fazer múltiplos pedidos
+
+Produtos
+
+Cada produto deve ter um identificador único
+Armazenar nome do produto, preço atual e categoria
+Controlar quantidade em estoque
+Um produto pode estar em vários pedidos
+
+Pedidos
+
+Cada pedido deve ter um identificador único
+Registrar qual cliente fez o pedido
+Armazenar a data do pedido
+Ter um status (Ex: Em processamento, Entregue, Cancelado)
+Um pedido deve pertencer a um único cliente
+Um pedido pode ter vários produtos
+
+Itens do Pedido
+
+Registrar quais produtos fazem parte de cada pedido
+Armazenar a quantidade comprada de cada produto
+Guardar o preço unitário do produto no momento da compra
+Um item deve pertencer a um único pedido
+Um item deve referenciar um único produto
+
+Seu Desafio
+
+Modelagem:
+
+Crie o DDL (Data Definition Language) para todas as tabelas necessárias
+Defina as chaves primárias e estrangeiras apropriadas
+Escolha os tipos de dados mais adequados para cada coluna
+
+
+Dados de Teste:
+
+Insira pelo menos 5 clientes de estados diferentes
+Insira pelo menos 5 produtos de diferentes categorias e preços
+Crie pelo menos 5 pedidos
+Adicione múltiplos itens em alguns pedidos
+
+
+Consultas (escreva as queries SQL para):
+
+Nível Básico
+
+Liste todos os produtos com preço superior a R$ 1000.
+Encontre quantos clientes existem por estado.
+
+Nível Intermediário
+
+Liste os clientes que fizeram mais de um pedido.
+Calcule o valor total de cada pedido.
+Encontre os produtos que nunca foram vendidos.
+
+Nível Avançado
+
+Liste os 3 produtos mais vendidos (em quantidade) e o total vendido de cada um.
+Calcule o ticket médio (valor médio dos pedidos) por cliente.
+Para cada mês de 2024, mostre o total de vendas e compare com o mês anterior.
+
+Critérios de Avaliação
+
+Estrutura correta das tabelas e relacionamentos
+Escolha adequada dos tipos de dados
+Nomeação clara e consistente
+Uso correto de constraints (PRIMARY KEY, FOREIGN KEY)
+Clareza e eficiência das consultas SQL
+Uso adequado de JOINs, GROUP BY, funções agregadas e subconsultas
+
+Dicas
+
+Use nomes de colunas autoexplicativos
+Use nomes em inglês
+Considere a integridade referencial ao definir as chaves estrangeiras
+Pense na performance ao escolher os tipos de dados
+Comente seu código explicando decisões importantes
+Teste suas consultas com os dados inseridos
+
+Bom desafio! 🚀
